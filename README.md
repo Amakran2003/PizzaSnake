@@ -1,14 +1,8 @@
 # 2D Snake Game
 
 ## A simple game created using C++ and SFML
-
 ---
-
-- Note: For cross platform build checkout branch [cmake-build](https://github.com/ufrshubham/2D-Snake-Game/tree/cmake-build)
-
 ### What it looks like?
-
-![Demo](Demo.gif)
 
 ### This game has multiple states
 
@@ -32,3 +26,18 @@
   - Make
   - SFML lib
 - Just run make command to generate the executable
+
+
+### How to run the game?
+
+macOS, Windows and Linux
+
+On Vscode terminal or either your OS terminal 
+
+- Go in the directory file by using `cd`
+- First type `make` or copy and paste that:
+```bash
+g++ -Wall -Wextra -Wno-unused-parameter -std=c++17 -ggdb -Iinclude -Llib src/AssetMan.cpp src/Game.cpp src/GameOver.cpp src/GamePlay.cpp src/MainMenu.cpp src/PauseGame.cpp src/Snake.cpp src/StateMan.cpp src/main.cpp -o bin/main -lsfml-graphics -lsfml-window -lsfml-system
+```
+- Finally type `bin/main`
+Enjoy!
